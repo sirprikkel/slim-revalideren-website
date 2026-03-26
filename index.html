@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Slim Revalideren biedt innovatieve zorghulpmiddelen die de revalidatie versnellen en zorgverleners ondersteunen. Kinetec CPM, Rehablock® en E-learning.">
+  <title>Slim Revalideren — Innovatieve Revalidatie Apparatuur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F172A',
+            secondary: '#334155',
+            cta: '#0E7490',
+            'cta-dark': '#0C5E73',
+            surface: '#F8FAFC',
+            'warm-teal': '#F0FDFA',
+            'warm-teal-mid': '#CCFBF1',
+          },
+          fontFamily: {
+            heading: ['Figtree', 'sans-serif'],
+            body: ['Noto Sans', 'sans-serif'],
+          },
+          borderRadius: {
+            'soft': '12px',
+            'softer': '16px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Noto Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Figtree', sans-serif; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #0E7490; outline-offset: 2px; border-radius: 4px; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    .skip-link { position: absolute; top: -100%; left: 0; z-index: 9999; background: #0E7490; color: #fff; padding: 12px 24px; }
+    .skip-link:focus { top: 0; }
+  </style>
+</head>
+<body class="bg-surface text-primary font-body">
+
+  <a href="#main" class="skip-link">Ga naar inhoud</a>
+
+  <!-- Navbar -->
+  <nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100" role="navigation" aria-label="Hoofdnavigatie">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer" aria-label="Slim Revalideren - Home">
+          <img src="images/logo.png" alt="Slim Revalideren logo" class="h-12 w-auto">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="kinetec-cpm.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">Kinetec/CPM</a>
+          <a href="rehablock.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">Rehablock®</a>
+          <a href="e-learning.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">E-Learning</a>
+          <a href="over-ons.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">Over Ons</a>
+          <a href="contact.html" class="bg-cta text-white px-6 py-3 rounded-soft font-semibold hover:bg-cta-dark transition-colors duration-200 cursor-pointer min-h-[44px] flex items-center">Contact</a>
+        </div>
+        <!-- Mobile hamburger -->
+        <button id="menu-toggle" class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu openen">
+          <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-4" role="menu">
+      <div class="px-4 pt-2 flex flex-col gap-1">
+        <a href="kinetec-cpm.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer" role="menuitem">Kinetec/CPM</a>
+        <a href="rehablock.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer" role="menuitem">Rehablock®</a>
+        <a href="e-learning.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer" role="menuitem">E-Learning</a>
+        <a href="over-ons.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer" role="menuitem">Over Ons</a>
+        <a href="contact.html" class="mt-2 bg-cta text-white px-6 py-3 rounded-soft font-semibold text-center hover:bg-cta-dark transition-colors duration-200 cursor-pointer" role="menuitem">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-secondary" aria-label="Hero">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <img src="images/about-header.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay" loading="eager" aria-hidden="true">
+      <div class="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
+        <div class="max-w-3xl">
+          <p class="text-warm-teal-mid font-medium text-lg mb-4 font-heading">Innovatieve Zorghulpmiddelen</p>
+          <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            Slimmer revalideren, <br class="hidden md:block">sneller herstellen
+          </h1>
+          <p class="text-gray-200 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
+            Slim Revalideren biedt innovatieve zorghulpmiddelen die de revalidatie versnellen en zorgverleners ondersteunen, met een focus op kwaliteit, effectiviteit en duurzaamheid.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#producten" class="bg-cta text-white px-8 py-4 rounded-soft font-semibold text-lg hover:bg-cta-dark transition-colors duration-200 cursor-pointer text-center min-h-[44px]">Bekijk onze producten</a>
+            <a href="contact.html" class="border-2 border-white text-white px-8 py-4 rounded-soft font-semibold text-lg hover:bg-white hover:text-primary transition-colors duration-200 cursor-pointer text-center min-h-[44px]">Neem contact op</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP Balk -->
+    <section class="bg-white border-b border-gray-100" aria-label="Kernwaarden">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-semibold text-lg text-primary mb-1">Innovatief</h3>
+              <p class="text-secondary text-base leading-relaxed">Unieke, efficiënte en veilige zorghulpmiddelen voor patiënten en zorgverleners.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-semibold text-lg text-primary mb-1">Samenwerking</h3>
+              <p class="text-secondary text-base leading-relaxed">Erkend door Universitair Medische Centra en revalidatieklinieken.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-semibold text-lg text-primary mb-1">Persoonlijk</h3>
+              <p class="text-secondary text-base leading-relaxed">Klantgerichte benadering met persoonlijke service en snelle levering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Producten -->
+    <section id="producten" class="py-16 md:py-24 bg-surface" aria-label="Onze producten">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12 md:mb-16">
+          <p class="text-cta font-medium mb-2 font-heading">Onze Producten & Diensten</p>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">Innovatieve oplossingen voor revalidatie</h2>
+          <p class="text-secondary text-lg max-w-2xl mx-auto">Van slimme revalidatieapparatuur tot gespecialiseerde e-learning — wij ondersteunen patiënten en zorgverleners.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Kinetec -->
+          <a href="kinetec-cpm.html" class="group bg-white rounded-softer overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 cursor-pointer" aria-label="Meer over Kinetec Spectra Kompanion">
+            <div class="h-56 overflow-hidden">
+              <img src="images/kinetec-spectra.jpg" alt="Kinetec Spectra Kompanion CPM machine" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading font-semibold text-xl text-primary mb-3">Kinetec Spectra Kompanion™</h3>
+              <p class="text-secondary leading-relaxed mb-4">State-of-the-art CPM machine voor het verbeteren van de kniefunctie. Snel en efficiënt thuis revalideren.</p>
+              <span class="text-cta font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-200">
+                Meer informatie
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+          <!-- Rehablock -->
+          <a href="rehablock.html" class="group bg-white rounded-softer overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 cursor-pointer" aria-label="Meer over Rehablock">
+            <div class="h-56 overflow-hidden">
+              <img src="images/rehablock.webp" alt="Rehablock steunblok voor rompstabiliteit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading font-semibold text-xl text-primary mb-3">Rehablock®</h3>
+              <p class="text-secondary leading-relaxed mb-4">Stevig steunblok voor patiënten met verminderde rompstabiliteit. Veilig en comfortabel rechtop zitten.</p>
+              <span class="text-cta font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-200">
+                Meer informatie
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+          <!-- E-Learning -->
+          <a href="e-learning.html" class="group bg-white rounded-softer overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 cursor-pointer" aria-label="Meer over E-Learning Explosieletsel">
+            <div class="h-56 overflow-hidden">
+              <img src="images/technology.jpg" alt="E-learning voor zorgverleners" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading font-semibold text-xl text-primary mb-3">E-Learning Explosieletsel</h3>
+              <p class="text-secondary leading-relaxed mb-4">Online training voor zorgverleners over de behandeling van weke delenletsel na een explosie.</p>
+              <span class="text-cta font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-200">
+                Meer informatie
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Over Ons snippet -->
+    <section class="py-16 md:py-24 bg-white" aria-label="Over Slim Revalideren">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div class="order-2 lg:order-1">
+            <p class="text-cta font-medium mb-2 font-heading">Over Ons</p>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">Slim Revalideren: Toonaangevend in innovatieve zorghulpmiddelen</h2>
+            <p class="text-secondary text-lg leading-relaxed mb-6">
+              In 2023 is Slim Revalideren B.V. ontstaan met als doel om bestaande producten te verbeteren en innovaties bereikbaar te maken binnen de gezondheidszorg. Door een persoonlijke aanpak willen wij impact hebben op de gezondheidszorg door de zelfstandigheid van patiënten te vergroten en het werk van zorgverleners gemakkelijker te maken.
+            </p>
+            <p class="text-secondary text-lg leading-relaxed mb-8">
+              We zijn trots op de samenwerking met Universitair Medische Centra en revalidatieklinieken, waar we al erkend zijn voor onze effectiviteit.
+            </p>
+            <a href="over-ons.html" class="inline-flex items-center gap-2 text-cta font-semibold hover:text-cta-dark transition-colors duration-200 cursor-pointer text-lg">
+              Lees meer over ons
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="rounded-softer overflow-hidden shadow-lg">
+              <img src="images/team.jpg" alt="Team Slim Revalideren" class="w-full h-auto object-cover" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="py-16 md:py-24 bg-warm-teal" aria-label="Klantervaringen">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <p class="text-cta font-medium mb-2 font-heading">Ervaringen</p>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-4">Wat onze klanten zeggen</h2>
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <div class="flex gap-0.5" aria-label="5 van 5 sterren">
+              <svg class="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-6 h-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <span class="text-primary font-semibold text-lg">5.0/5</span>
+            <span class="text-secondary">op Google</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Review 1 -->
+          <div class="bg-white p-8 rounded-softer shadow-sm">
+            <div class="flex gap-0.5 mb-4" aria-label="5 sterren">
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="text-secondary leading-relaxed mb-4">
+              "Na zeer complexe knieoperatie werd door het ziekenhuis geregeld dat ik via Indy een CPM kon lenen om thuis verder de buiging van mijn knie te oefenen. Dezelfde dag van het ontslag stond Indy al thuis voor mijn deur met het apparaat. Wat een top service!"
+            </blockquote>
+            <p class="font-heading font-semibold text-primary">Janna</p>
+            <p class="text-secondary text-sm">via Google Reviews</p>
+          </div>
+          <!-- Review 2 -->
+          <div class="bg-white p-8 rounded-softer shadow-sm">
+            <div class="flex gap-0.5 mb-4" aria-label="5 sterren">
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="text-secondary leading-relaxed mb-4">
+              "Absoluut een aanrader! Via de fysiotherapeut in het ziekenhuis in Maastricht kreeg ik de tip om via Slim Revalideren een CPM te lenen. Het heeft me mega goed geholpen. Indy is heel attent en heeft zichtbaar plezier in zijn vak."
+            </blockquote>
+            <p class="font-heading font-semibold text-primary">K. Bruijnen</p>
+            <p class="text-secondary text-sm">via Google Reviews</p>
+          </div>
+          <!-- Review 3 -->
+          <div class="bg-white p-8 rounded-softer shadow-sm">
+            <div class="flex gap-0.5 mb-4" aria-label="5 sterren">
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="text-secondary leading-relaxed mb-4">
+              "Na mijn knie operatie moest ik thuis verder revalideren. Het ziekenhuis heeft toen kunnen regelen dat ik via Slim Revalideren een CPM mocht lenen. Vrijdag ontslagen en zondag werd de CPM al thuis gebracht en ingesteld door Indy. Echt een super service!"
+            </blockquote>
+            <p class="font-heading font-semibold text-primary">I. Buurman</p>
+            <p class="text-secondary text-sm">via Google Reviews</p>
+          </div>
+          <!-- Review 4 -->
+          <div class="bg-white p-8 rounded-softer shadow-sm">
+            <div class="flex gap-0.5 mb-4" aria-label="5 sterren">
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <blockquote class="text-secondary leading-relaxed mb-4">
+              "Indy Smits van Slim Revalideren is dé duizendpoot die zorgt voor verandering in je zorginstelling. Echte aanrader. Snel, professioneel en doortastend. Erg prettig mee samengewerkt."
+            </blockquote>
+            <p class="font-heading font-semibold text-primary">Ties van den Hurk</p>
+            <p class="text-secondary text-sm">via Google Reviews</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 md:py-28 bg-primary overflow-hidden" aria-label="Contact opnemen">
+      <img src="images/footer-cta.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" aria-hidden="true">
+      <div class="relative max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">Ontdek hoe wij u kunnen helpen</h2>
+        <p class="text-gray-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+          Heeft u vragen over onze producten of wilt u vrijblijvend advies? Neem gerust contact met ons op — wij denken graag met u mee.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="contact.html" class="bg-cta text-white px-8 py-4 rounded-soft font-semibold text-lg hover:bg-cta-dark transition-colors duration-200 cursor-pointer min-h-[44px]">Neem contact op</a>
+          <a href="tel:0623566947" class="border-2 border-white text-white px-8 py-4 rounded-soft font-semibold text-lg hover:bg-white hover:text-primary transition-colors duration-200 cursor-pointer min-h-[44px]">Bel 06 23566947</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-gray-300" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <img src="images/logo.png" alt="Slim Revalideren" class="h-10 w-auto mb-4 brightness-200">
+          <p class="text-gray-400 leading-relaxed">Innovatieve zorghulpmiddelen die de revalidatie versnellen en zorgverleners ondersteunen.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Producten</h4>
+          <ul class="space-y-2">
+            <li><a href="kinetec-cpm.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Kinetec/CPM</a></li>
+            <li><a href="rehablock.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Rehablock®</a></li>
+            <li><a href="e-learning.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">E-Learning</a></li>
+            <li><a href="over-ons.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Over Ons</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start gap-2">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Dokter Hanegraaffhofke 14, 5243 VG Rosmalen
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:0623566947" class="hover:text-white transition-colors duration-200 cursor-pointer">06 23566947</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:info@slimrevalideren.nl" class="hover:text-white transition-colors duration-200 cursor-pointer">info@slimrevalideren.nl</a>
+            </li>
+          </ul>
+          <div class="flex gap-4 mt-6">
+            <a href="https://www.linkedin.com/company/106552003" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="LinkedIn">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100083364699935" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Facebook">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Slim Revalideren B.V. Alle rechten voorbehouden. | Gebouwd door <a href="https://www.code-lieshout.nl" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer" target="_blank" rel="noopener noreferrer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

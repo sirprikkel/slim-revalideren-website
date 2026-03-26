@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rehablock® — stevig steunblok voor patiënten met verminderde rompstabiliteit. Veilig en comfortabel rechtop zitten zonder fysieke ondersteuning.">
+  <title>Rehablock® — Slim Revalideren</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#0F172A', secondary: '#334155', cta: '#0E7490', 'cta-dark': '#0C5E73', surface: '#F8FAFC', 'warm-teal': '#F0FDFA', 'warm-teal-mid': '#CCFBF1' },
+          fontFamily: { heading: ['Figtree', 'sans-serif'], body: ['Noto Sans', 'sans-serif'] },
+          borderRadius: { 'soft': '12px', 'softer': '16px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Noto Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Figtree', sans-serif; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #0E7490; outline-offset: 2px; border-radius: 4px; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    .skip-link { position: absolute; top: -100%; left: 0; z-index: 9999; background: #0E7490; color: #fff; padding: 12px 24px; }
+    .skip-link:focus { top: 0; }
+  </style>
+</head>
+<body class="bg-surface text-primary font-body">
+  <a href="#main" class="skip-link">Ga naar inhoud</a>
+
+  <nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100" role="navigation" aria-label="Hoofdnavigatie">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer"><img src="images/logo.png" alt="Slim Revalideren logo" class="h-12 w-auto"></a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="kinetec-cpm.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">Kinetec/CPM</a>
+          <a href="rehablock.html" class="text-cta font-semibold cursor-pointer">Rehablock®</a>
+          <a href="e-learning.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">E-Learning</a>
+          <a href="over-ons.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">Over Ons</a>
+          <a href="contact.html" class="bg-cta text-white px-6 py-3 rounded-soft font-semibold hover:bg-cta-dark transition-colors duration-200 cursor-pointer min-h-[44px] flex items-center">Contact</a>
+        </div>
+        <button id="menu-toggle" class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu openen">
+          <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-4">
+      <div class="px-4 pt-2 flex flex-col gap-1">
+        <a href="kinetec-cpm.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer">Kinetec/CPM</a>
+        <a href="rehablock.html" class="py-3 px-4 text-cta bg-warm-teal rounded-lg font-semibold cursor-pointer">Rehablock®</a>
+        <a href="e-learning.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer">E-Learning</a>
+        <a href="over-ons.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer">Over Ons</a>
+        <a href="contact.html" class="mt-2 bg-cta text-white px-6 py-3 rounded-soft font-semibold text-center hover:bg-cta-dark transition-colors duration-200 cursor-pointer">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="bg-gradient-to-br from-primary to-secondary py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <p class="text-warm-teal-mid font-medium mb-3 font-heading">Producten</p>
+        <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Rehablock®</h1>
+        <p class="text-gray-300 text-lg md:text-xl max-w-2xl">Stevig steunblok voor patiënten met verminderde rompstabiliteit. Veilig en comfortabel rechtop zitten.</p>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div>
+            <img src="images/rehablock.webp" alt="Rehablock steunblok voor rompstabiliteit" class="w-full rounded-softer shadow-lg" loading="lazy">
+          </div>
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-primary mb-6">Stabiliteit en comfort voor patiënten</h2>
+            <p class="text-secondary text-lg leading-relaxed mb-6">
+              Een Rehablock® is gemaakt van een stevig materiaal waardoor goede ondersteuning kan worden geboden aan patiënten met een verminderde of slechte rompstabiliteit. Deze zorginnovatie zorgt voor stabiliteit in de rug en onder beide armen en voeten.
+            </p>
+            <p class="text-secondary text-lg leading-relaxed mb-6">
+              Op deze manier kan de patiënt veilig en comfortabel rechtop zitten en is fysieke ondersteuning van zorgverleners niet meer noodzakelijk. Door het weghalen van een Rehablock® kan ook op een gecontroleerde manier de rompstabiliteit getraind worden.
+            </p>
+            <p class="text-secondary text-lg leading-relaxed mb-8">
+              De hoes is antibacterieel en gemaakt van waterdicht en brandvertragend materiaal. De hoes is onder andere bestand tegen bloed en urine, en is schoon te maken met desinfecterende doekjes zonder dat dit ten koste gaat van de kwaliteit.
+            </p>
+            <a href="contact.html" class="inline-flex items-center gap-2 bg-cta text-white px-8 py-4 rounded-soft font-semibold text-lg hover:bg-cta-dark transition-colors duration-200 cursor-pointer min-h-[44px]">
+              Informatie aanvragen
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <h2 class="font-heading text-3xl font-bold text-primary mb-12 text-center">Voordelen</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-softer shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-primary mb-2">Betere Ondersteuning</h3>
+            <p class="text-secondary leading-relaxed">Betere ondersteuning voor de patiënt met stabiliteit in rug, armen en voeten.</p>
+          </div>
+          <div class="bg-white p-8 rounded-softer shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-primary mb-2">Minder Belasting</h3>
+            <p class="text-secondary leading-relaxed">Minder belasting voor zorgverlener — verpleegkundige heeft handen vrij voor zorgtaken.</p>
+          </div>
+          <div class="bg-white p-8 rounded-softer shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-primary mb-2">Verschillende Kleuren</h3>
+            <p class="text-secondary leading-relaxed">In verschillende kleuren leverbaar voor een persoonlijke touch.</p>
+          </div>
+          <div class="bg-white p-8 rounded-softer shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-primary mb-2">CE-Markering</h3>
+            <p class="text-secondary leading-relaxed">Voldoet aan alle toepasselijke EU-wetgeving.</p>
+          </div>
+          <div class="bg-white p-8 rounded-softer shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-primary mb-2">Gratis Proefperiode</h3>
+            <p class="text-secondary leading-relaxed">Gratis 30 dagen proefperiode om het product te ervaren.</p>
+          </div>
+          <div class="bg-white p-8 rounded-softer shadow-sm hover:shadow-md transition-all duration-200">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-primary mb-2">Gratis Bezorging</h3>
+            <p class="text-secondary leading-relaxed">Gratis bezorging vanaf 3 stuks. Gratis transportroller per set van 3 stuks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-20 bg-warm-teal">
+      <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-3xl font-bold text-primary mb-4">Interesse in de Rehablock®?</h2>
+        <p class="text-secondary text-lg mb-8">Vraag een gratis proefperiode van 30 dagen aan of neem contact op voor meer informatie.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="contact.html" class="bg-cta text-white px-8 py-4 rounded-soft font-semibold text-lg hover:bg-cta-dark transition-colors duration-200 cursor-pointer min-h-[44px]">Contact opnemen</a>
+          <a href="tel:0623566947" class="border-2 border-primary text-primary px-8 py-4 rounded-soft font-semibold text-lg hover:bg-primary hover:text-white transition-colors duration-200 cursor-pointer min-h-[44px]">Bel 06 23566947</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <img src="images/logo.png" alt="Slim Revalideren" class="h-10 w-auto mb-4 brightness-200">
+          <p class="text-gray-400 leading-relaxed">Innovatieve zorghulpmiddelen die de revalidatie versnellen en zorgverleners ondersteunen.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Producten</h4>
+          <ul class="space-y-2">
+            <li><a href="kinetec-cpm.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Kinetec/CPM</a></li>
+            <li><a href="rehablock.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Rehablock®</a></li>
+            <li><a href="e-learning.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">E-Learning</a></li>
+            <li><a href="over-ons.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Over Ons</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Dokter Hanegraaffhofke 14, 5243 VG Rosmalen</li>
+            <li><a href="tel:0623566947" class="hover:text-white transition-colors duration-200 cursor-pointer">06 23566947</a></li>
+            <li><a href="mailto:info@slimrevalideren.nl" class="hover:text-white transition-colors duration-200 cursor-pointer">info@slimrevalideren.nl</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Slim Revalideren B.V. | Gebouwd door <a href="https://www.code-lieshout.nl" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer" target="_blank" rel="noopener noreferrer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

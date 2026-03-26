@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Over Slim Revalideren — opgericht in 2023, toonaangevend in innovatieve zorghulpmiddelen. Samenwerking met UMC's en revalidatieklinieken.">
+  <title>Over Ons — Slim Revalideren</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#0F172A', secondary: '#334155', cta: '#0E7490', 'cta-dark': '#0C5E73', surface: '#F8FAFC', 'warm-teal': '#F0FDFA', 'warm-teal-mid': '#CCFBF1' },
+          fontFamily: { heading: ['Figtree', 'sans-serif'], body: ['Noto Sans', 'sans-serif'] },
+          borderRadius: { 'soft': '12px', 'softer': '16px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Noto Sans', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Figtree', sans-serif; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #0E7490; outline-offset: 2px; border-radius: 4px; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    .skip-link { position: absolute; top: -100%; left: 0; z-index: 9999; background: #0E7490; color: #fff; padding: 12px 24px; }
+    .skip-link:focus { top: 0; }
+  </style>
+</head>
+<body class="bg-surface text-primary font-body">
+  <a href="#main" class="skip-link">Ga naar inhoud</a>
+
+  <nav class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100" role="navigation" aria-label="Hoofdnavigatie">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 cursor-pointer"><img src="images/logo.png" alt="Slim Revalideren logo" class="h-12 w-auto"></a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="kinetec-cpm.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">Kinetec/CPM</a>
+          <a href="rehablock.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">Rehablock®</a>
+          <a href="e-learning.html" class="text-secondary hover:text-cta transition-colors duration-200 font-medium cursor-pointer">E-Learning</a>
+          <a href="over-ons.html" class="text-cta font-semibold cursor-pointer">Over Ons</a>
+          <a href="contact.html" class="bg-cta text-white px-6 py-3 rounded-soft font-semibold hover:bg-cta-dark transition-colors duration-200 cursor-pointer min-h-[44px] flex items-center">Contact</a>
+        </div>
+        <button id="menu-toggle" class="md:hidden p-2 min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu openen">
+          <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-4">
+      <div class="px-4 pt-2 flex flex-col gap-1">
+        <a href="kinetec-cpm.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer">Kinetec/CPM</a>
+        <a href="rehablock.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer">Rehablock®</a>
+        <a href="e-learning.html" class="py-3 px-4 text-secondary hover:text-cta hover:bg-warm-teal rounded-lg transition-colors duration-200 font-medium cursor-pointer">E-Learning</a>
+        <a href="over-ons.html" class="py-3 px-4 text-cta bg-warm-teal rounded-lg font-semibold cursor-pointer">Over Ons</a>
+        <a href="contact.html" class="mt-2 bg-cta text-white px-6 py-3 rounded-soft font-semibold text-center hover:bg-cta-dark transition-colors duration-200 cursor-pointer">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="bg-gradient-to-br from-primary to-secondary py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <p class="text-warm-teal-mid font-medium mb-3 font-heading">Over Ons</p>
+        <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Slim Revalideren</h1>
+        <p class="text-gray-300 text-lg md:text-xl max-w-2xl">Toonaangevend in innovatieve zorghulpmiddelen sinds 2023.</p>
+      </div>
+    </section>
+
+    <!-- Verhaal -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-primary mb-6">Ons Verhaal</h2>
+            <p class="text-secondary text-lg leading-relaxed mb-6">
+              In 2023 is Slim Revalideren B.V. ontstaan met als doel om bestaande producten te verbeteren en innovaties bereikbaar te maken binnen de gezondheidszorg. Door een persoonlijke aanpak willen wij impact hebben op de gezondheidszorg door de zelfstandigheid van patiënten te vergroten en het werk van zorgverleners gemakkelijker te maken.
+            </p>
+            <p class="text-secondary text-lg leading-relaxed mb-6">
+              Onze missie is het verbeteren van revalidatieprocessen door innovatieve hulpmiddelen te ontwikkelen die zowel patiënten als zorgverleners ondersteunen. Wij streven naar een toekomst waarin revalidatie voor iedereen toegankelijk en effectief is, met verbeterde patiëntresultaten en zorgverlenerservaring.
+            </p>
+            <p class="text-secondary text-lg leading-relaxed">
+              Ook denken wij graag mee met uitdagingen in de praktijk waar op dit moment nog geen slimme oplossing voor is. Wie weet kunnen we samen tot een 'slimme' oplossing komen. Neem hiervoor geheel vrijblijvend contact met ons op.
+            </p>
+          </div>
+          <div>
+            <img src="images/team.jpg" alt="Team Slim Revalideren" class="w-full rounded-softer shadow-lg" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mijlpalen -->
+    <section class="py-16 md:py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-heading text-3xl font-bold text-primary mb-4">Innovaties en Mijlpalen</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-softer shadow-sm">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-primary mb-3">Innovatief Zorghulpmiddel</h3>
+            <p class="text-secondary leading-relaxed">Ontwikkeling van een uniek hulpmiddel dat revalidatie versnelde, de zorgkwaliteit verbeterde en de werkdruk van zorgverleners verminderd.</p>
+          </div>
+          <div class="bg-white p-8 rounded-softer shadow-sm">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-primary mb-3">Samenwerking met Zorginstellingen</h3>
+            <p class="text-secondary leading-relaxed">Partnerschappen aangegaan met vooraanstaande ziekenhuizen en revalidatieklinieken voor effectieve implementatie van onze oplossingen.</p>
+          </div>
+          <div class="bg-white p-8 rounded-softer shadow-sm">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-primary mb-3">Onderzoek en Ontwikkeling</h3>
+            <p class="text-secondary leading-relaxed">Praktijkgericht onderzoek naar patiëntervaringen leidde tot nieuwe, op maat gemaakte hulpmiddelen.</p>
+          </div>
+          <div class="bg-white p-8 rounded-softer shadow-sm">
+            <div class="w-12 h-12 bg-warm-teal rounded-soft flex items-center justify-center mb-4" aria-hidden="true">
+              <svg class="w-6 h-6 text-cta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-primary mb-3">Patiëntgericht Design</h3>
+            <p class="text-secondary leading-relaxed">Focus op patiëntfeedback heeft geleid tot verbeterde en gebruiksvriendelijke producten.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kernwaarden -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="font-heading text-3xl font-bold text-primary mb-6">Onze Kernwaarden</h2>
+          <p class="text-secondary text-lg leading-relaxed mb-8">
+            Bij Slim Revalideren waarderen wij kwaliteit, innovatie en empathie. Wij geloven dat samenwerking met zorgprofessionals en patiënten essentieel is om effectievere revalidatiehulpmiddelen te ontwikkelen.
+          </p>
+          <p class="text-secondary text-lg leading-relaxed mb-8">
+            Onze ethiek is geworteld in de principes van integriteit, transparantie en respect. Wij zetten ons in voor het leveren van producten die de patiëntenzorg verbeteren.
+          </p>
+          <p class="text-secondary text-lg leading-relaxed">
+            Wij werken met een klantgerichte benadering, waarbij we actief luisteren naar de ervaringen en behoeften van zowel patiënten als zorgverleners.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 md:py-20 bg-warm-teal">
+      <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-3xl font-bold text-primary mb-4">Ontdek hoe wij u kunnen helpen</h2>
+        <p class="text-secondary text-lg mb-8">Heeft u een uitdaging in de praktijk? Neem geheel vrijblijvend contact met ons op.</p>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-cta text-white px-8 py-4 rounded-soft font-semibold text-lg hover:bg-cta-dark transition-colors duration-200 cursor-pointer min-h-[44px]">
+          Neem contact op
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <img src="images/logo.png" alt="Slim Revalideren" class="h-10 w-auto mb-4 brightness-200">
+          <p class="text-gray-400 leading-relaxed">Innovatieve zorghulpmiddelen die de revalidatie versnellen en zorgverleners ondersteunen.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Producten</h4>
+          <ul class="space-y-2">
+            <li><a href="kinetec-cpm.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Kinetec/CPM</a></li>
+            <li><a href="rehablock.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Rehablock®</a></li>
+            <li><a href="e-learning.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">E-Learning</a></li>
+            <li><a href="over-ons.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Over Ons</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Dokter Hanegraaffhofke 14, 5243 VG Rosmalen</li>
+            <li><a href="tel:0623566947" class="hover:text-white transition-colors duration-200 cursor-pointer">06 23566947</a></li>
+            <li><a href="mailto:info@slimrevalideren.nl" class="hover:text-white transition-colors duration-200 cursor-pointer">info@slimrevalideren.nl</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Slim Revalideren B.V. | Gebouwd door <a href="https://www.code-lieshout.nl" class="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer" target="_blank" rel="noopener noreferrer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
