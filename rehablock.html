@@ -60,11 +60,18 @@
   </nav>
 
   <main id="main">
-    <section class="bg-gradient-to-br from-primary to-secondary py-16 md:py-24">
-      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+    <section class="relative overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center">
+      <!-- Autoplay achtergrond video -->
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+        <source src="images/hero-video.mp4" type="video/mp4">
+      </video>
+      <!-- Gradient overlay voor leesbaarheid -->
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/50"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+      <div class="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-20 md:py-28">
         <p class="text-warm-teal-mid font-medium mb-3 font-heading">Producten</p>
         <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4">Rehablock®</h1>
-        <p class="text-gray-300 text-lg md:text-xl max-w-2xl">Stevig steunblok voor patiënten met verminderde rompstabiliteit. Veilig en comfortabel rechtop zitten.</p>
+        <p class="text-gray-200 text-lg md:text-xl max-w-2xl">Stevig steunblok voor patiënten met verminderde rompstabiliteit. Veilig en comfortabel rechtop zitten.</p>
       </div>
     </section>
 
